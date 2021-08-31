@@ -1,5 +1,5 @@
 plugins {
-    id "org.jetbrains.kotlin.jvm" version "$kotlin_version"
+    id "org.jetbrains.kotlin.jvm"
     id 'maven-publish'
 }
 
@@ -45,13 +45,9 @@ dependencies {
 }
 
 compileKotlin {
-    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.jvmTarget = "11"
     kotlinOptions.freeCompilerArgs += ["-Xuse-experimental=kotlin.ExperimentalStdlibApi"]
 }
 compileTestKotlin {
-    kotlinOptions.jvmTarget = "1.8"
-}
-
-wrapper {
-    gradleVersion = '7.1.1'
+    kotlinOptions.jvmTarget = "11"
 }
