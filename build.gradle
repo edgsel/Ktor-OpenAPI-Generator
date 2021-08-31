@@ -8,7 +8,6 @@ version '0.2-beta.20-SNAPSHOT'
 
 repositories {
     mavenCentral()
-    jcenter()
 }
 
 publishing {
